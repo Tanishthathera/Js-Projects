@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+   <style>
+      fieldset,input,textarea{
+         border-radius: 10px;
+      }
+   footer{
+      /* background-color: rgb(20, 14, 14);          */
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+   }
+            
+   </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title> 
+   
+</head>
+<body style="background-color: antiquewhite;"> 
+    <fieldset style="background-color: rgb(255, 255, 216);" > <h1 style="text-align: center;">Payment Form</h1></fieldset><br>
+    <h2>Contect information</h2><br>
+     <form action=""> 
+        <p>
+         Name:   <input type="text" name="name"required> 
+        </p>
+        <legend>gender:</legend>
+        <p> male<input type="radio" name="gender" id="male">female <input type="radio" name="gender" id="female"></p> 
+        <p>adderes: <textarea name="adderes" id="adderes" cols="100" rows="5"></textarea></p>
+        <p>Email: <input type="email" name="email" id="email" @required></p>
+                <p>state: <select name="state" id="state"> 
+              <option value="">---select a state---</option>
+                 <option value="rajasthan">rajasthan</option>
+                  <option value="maddhyapradesh" >maddhyapradesh</option>
+                     <option value="utterpradesh" >utterpradesh</option>
+                     <option value="uttrakhand" >uttrakhand</option>
+                  <option value="gujrat" >gujrat</option>
+                 <option value="maharasthra" >maharasthra</option>
+              <option value="punjab" >punjab</option>
+            </select> 
+          </p>
+         <p>pincode: <input type="number" name="pincode" id="pincode"></p>   
+             <p>contect number: <input type="number" name="contect number" id="contect number"></p>   
+                <p>pan number: <input type="text" name="pan number" id="pan number"></p>
+              <fieldset>
+              <legend>Are you 18+</legend><p>yes<input type="radio" name="age" id="yes"> no<input type="radio" name="age" id="no" required></p>  
+              </fieldset><br>    
+
+                  <DIVs > 
+                     
+                     <input type="submit" style="background-color: rgb(32, 32, 82); color: #ffffff;">
+                                   
+                     <input style="background-color: rgb(32, 32, 82); color: #ffffff; float: right;"  type="button" value="Reload Page" onClick="window.location.reload(true)" >
+                    <hr>
+                  </DIV>
+                           <div>
+                              <footer>
+                                <a href="#">FAQ</a><br><br>
+                                <a href="#">privacy policy</a><br><br>
+                                <a href="#">terms of us</a><br><br> 
+                                <a href="#">&copy;home2023</a><br><br>
+                              </footer>
+                           </div>             
+         </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb</title>
+    <link rel="stylesheet" href="bulb.css">
+</head>
+<body>
+    <div class="main-heading"></div>
+    <h1>Can you turn the light ON?</h1>
+
+    <img src="lightbulb1.png" alt="lightOfPic" id="myImage">
+
+       <label class="switch">
+    <!-- <button onclick="document.getElementById('myImage').src='lightbulb.png' ">Turn ON the light</button> -->
+    <input type="checkbox" onclick="light()" >
+             
+    <!-- <button onclick="document.getElementById('myImage').src='lightbulb1.png' ">Turn OFF the light</button> -->
+
+        <span 
+        class="slider">off / on</span>
+    
+</label>
+
+<script>
+    var sw = 0;
+		function light() {
+			if (sw == 1) {
+				document.getElementById('myImage').src="lightbulb1.png";
+				sw = 0;
+			} else {
+				document.getElementById('myImage').src="lightbulb.png";
+				sw = 1;
+			}
+		}
+</script>
+    
+</body>
+</html>
